@@ -1,0 +1,82 @@
+body{
+column-count:3;
+font-family:sans-serif;
+}
+
+h1, body > dl > dt >h3 {display:none;}
+
+body > dl > dt{
+margin-top:0px;
+padding-top:0px;
+}
+
+h3{
+font-weight:normal;
+padding: 0px;
+margin: 1px;
+}
+
+h3::before{content :" \1F4C1";}
+
+
+a {
+display:block;
+color: #009;
+}
+
+a:hover{
+background-color: #bbe;
+}
+
+a[href$="pdf"]::before
+{
+content:"\1F5CE PDF ";
+color:#d00;
+font-weight: bold;
+}
+
+a:visited {color: #606;}
+
+p{
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+dt{display: block-inline;
+}
+
+dt > dl > dt {
+position: relative;
+display: block-inline;
+}
+
+dl{
+padding:0px;
+margin:0 0 0 1em;
+background-color: #555;
+}
+
+dt  {
+padding:1px;
+background-color: #eee;
+}
+
+body > dl > dt > dl > dt {
+float:left;
+width: 99%;
+padding-top:0.5em;
+
+break-inside: avoid;
+}
+body > dl:last-child {
+padding-bottom:2em;
+margin-bottom:2em;
+}
+
+body > dl > dt > dl > dt:hover {
+right:0;
+}
+
+dt:hover{
+background-color: #bbe;
+}
